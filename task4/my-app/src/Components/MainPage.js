@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import './css/style.css'
+import './images/logo.png'
 
 function Main() {
 	return (
@@ -10,9 +11,10 @@ function Main() {
 						href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
 						rel='stylesheet'
 					/>
-					<a href='index.html' class='logo'>
-						<img src='../images/logo.png' alt='logo'></img>Сайт
-					</a>
+					<Link to='/' class='logo'>
+						<img src='./images/logo.png' alt='logo'></img>
+						Сайт
+					</Link>
 
 					<input type='checkbox' id='check' />
 					<label for='check' class='icons'>
